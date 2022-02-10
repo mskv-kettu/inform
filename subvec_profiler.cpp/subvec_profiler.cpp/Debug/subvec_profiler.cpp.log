@@ -1,0 +1,7 @@
+﻿  subvec_profiler.cpp.cpp
+C:\Users\mskvo\Documents\inform\subvec_profiler.cpp\subvec_profiler.cpp\subvec_profiler.cpp.cpp(16,19): warning C4244: инициализация: преобразование "_Rep" в "unsigned int", возможна потеря данных
+          with
+          [
+              _Rep=__int64
+          ]
+  subvec_profiler.cpp.vcxproj -> C:\Users\mskvo\Documents\inform\subvec_profiler.cpp\Debug\subvec_profiler.cpp.exe

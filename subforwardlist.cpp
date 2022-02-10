@@ -1,144 +1,153 @@
-﻿#include <iostream>
-struct subforwardlist {
-
-    int data;
-
-    subforwardlist* next;
-
-};
-
-bool init(subforwardlist** sfl); //инициализация пустого недосписка
-bool push_back(subforwardlist** sfl, int d); //добавление элемента в конец недосписка
-int pop_back(subforwardlist** sfl); //удаление элемента с конца недосписка
-bool push_forward(subforwardlist** sfl, int d); //добавление элемента в начало недосписка
-int pop_forward(subforwardlist** sfl); //удаление элемента из начала недосписка
-bool push_where(subforwardlist** sfl, unsigned int where, int d); //добавление элемента с порядковым номером where
-bool erase_where(subforwardlist** sfl, unsigned int where); //удаление элемента с порядковым номером where
-unsigned int size(subforwardlist** sfl); //определить размер недосписка
-void clear(subforwardlist** sfl); //очистить содержимое недосписка
-
-bool init(subforwardlist** sfl) //инициализация пустого недосписка
+﻿class subforwardlist
 {
-    *sfl = NULL;
-    return true;
-}
+private:
+    // Структура в области видимости класса
+    struct subForwardListStruct;
 
-bool push_back(subforwardlist** sfl, int d) //добавление элемента в конец недосписка
-{
-    subforwardlist* new_elem = new subforwardlist;
-    new_elem->data = d;
-    new_elem->next = NULL;
-    if (!*sfl)
+public:
+    subforwardlist()
     {
-        *sfl = new_elem;
+        sfls = NULL;
+    }
+    ~subforwardlist()
+    {
+        unsigned int N = this->size();
+        subForwardListStruct** ToDo = new subForwardListStruct * [N];
+        subForwardListStruct* pointer = sfls;
+        for (unsigned int i = 0; i < N; i++)
+        {
+            ToDo[i] = pointer;
+            pointer = pointer->next;
+        }
+        for (unsigned int i = 0; i < N; i++)
+        {
+            delete ToDo[i];
+        }
+        delete[] ToDo;
+        sfls = NULL;
+    }
+
+    //добавление элемента в конец недосписка
+    bool push_back(int d)
+    {
+        subForwardListStruct* new_elem = new subForwardListStruct;
+        new_elem->data = d;
+        new_elem->next = NULL;
+        if (!sfls)
+        {
+            sfls = new_elem;
+            return true;
+        }
+        subForwardListStruct* temp = sfls;
+        while (temp->next)
+        {
+            temp = temp->next;
+        }
+        temp->next = new_elem;
         return true;
     }
-    subforwardlist* temp = *sfl;
-    while (temp->next)
-    {
-        temp = temp->next;
-    }
-    temp->next = new_elem;
-    return true;
-}
 
-int pop_back(subforwardlist** sfl) //удаление элемента с конца недосписка
-{
-    if (!(*sfl)) return 0;
-    subforwardlist* temp = *sfl;
-    int result = temp->data;
-    if (!temp->next) { result = temp->data; delete temp; *sfl = NULL; return  result; }
-    subforwardlist* prev = *sfl;
-    while (temp->next)
+    //удаление элемента с конца недосписка
+    int pop_back()
     {
-        prev = temp;
-        temp = temp->next;
+        if (!sfls) return 0;
+        subForwardListStruct* temp = sfls;
+        int result = temp->data;
+        if (!temp->next) { result = temp->data; delete temp; sfls = NULL; return  result; } // для 1 элемента
+        subForwardListStruct* prev = sfls;
+        while (temp->next)
+        {
+            prev = temp;
+            temp = temp->next;
+        }
+        result = temp->data;
+        delete temp;
+        prev->next = NULL;
+        return  result;
     }
-    result = temp->data;
-    delete temp;
-    prev->next = NULL;
-    return  result;
-}
 
-bool push_forward(subforwardlist** sfl, int d) //добавление элемента в начало недосписка
-{
-    subforwardlist* new_elem = new subforwardlist;
-    new_elem->data = d;
-    new_elem->next = *sfl;
-    *sfl = new_elem;
-    return true;
-}
-
-int pop_forward(subforwardlist** sfl) //удаление элемента из начала недосписка
-{
-    subforwardlist* temp = NULL;
-    if (*sfl) { temp = (*sfl)->next; }
-    else return 0;
-    int result = (*sfl)->data;
-    delete* sfl;
-    *sfl = temp;
-    return result;
-}
-
-bool push_where(subforwardlist** sfl, unsigned int where, int d) //добавление элемента с порядковым номером where
-{
-    if (!where) { push_forward(sfl, d); return true; }
-    subforwardlist* cur = *sfl;
-    subforwardlist* cur_prev = NULL;
-    for (unsigned int i = 0; i < where; i++)
+    //добавление элемента в начало недосписка
+    bool push_forward(int d) //добавление элемента в начало недосписка
     {
-        //if (!(cur->next)) push_back(sfl, NULL);
-        cur_prev = cur;
-        cur = cur->next;
+        subForwardListStruct* new_elem = new subForwardListStruct;
+        new_elem->data = d;
+        new_elem->next = sfls;
+        sfls = new_elem;
+        return true;
     }
-    subforwardlist* new_elem = new subforwardlist;
-    new_elem->data = d;
-    new_elem->next = NULL;
-    new_elem->next = cur;
-    cur_prev->next = new_elem;
-}
 
-bool erase_where(subforwardlist** sfl, unsigned int where) //удаление элемента с порядковым номером where
-{
-    subforwardlist* cur = *sfl;
-    subforwardlist* cur_prev = NULL;
-    for (unsigned int i = 0; i < where; i++)
+    //удаление элемента из начала недосписка
+    int pop_forward() //удаление элемента из начала недосписка
     {
-        cur_prev = cur;
-        cur = cur->next;
+        subForwardListStruct* temp = NULL;
+        if (sfls) { temp = sfls->next; }
+        else return 0;
+        int result = sfls->data;
+        delete sfls;
+        sfls = temp;
+        return result;
     }
-    if (cur_prev) cur_prev->next = cur->next;
-    else *sfl = cur->next;
-    delete cur;
-    return true;
-}
 
-unsigned int size(subforwardlist** sfl) //определить размер недосписка
-{
-    unsigned int size = 0;
-    subforwardlist* temp = *sfl;
-    while (temp)
+    //добавление элемента с порядковым номером where
+    bool push_where(unsigned int where, int d)
     {
-        temp = temp->next;
-        size++;
+        if (!where) { push_forward(d); return true; }
+        subForwardListStruct* cur = sfls;
+        subForwardListStruct* cur_prev = NULL;
+        for (unsigned int i = 0; i < where; i++)
+        {
+            if (!(cur->next)) push_back(NULL); // проверка where больше длины списка
+            cur_prev = cur;
+            cur = cur->next;
+        }
+        subForwardListStruct* new_elem = new subForwardListStruct;
+        new_elem->data = d;
+        new_elem->next = cur;
+        cur_prev->next = new_elem;
+        return true;
     }
-    return size;
-}
 
-void clear(subforwardlist** sfl) //очистить содержимое недосписка
-{
-    unsigned int N = size(sfl);
-    subforwardlist** ToDo = new subforwardlist * [N];
-    subforwardlist* pointer = *sfl;
-    for (unsigned int i = 0; i < N; i++)
+    //удаление элемента с порядковым номером where
+    bool erase_where(unsigned int where)
     {
-        ToDo[i] = pointer;
-        pointer = pointer->next;
+        subForwardListStruct* cur = sfls;
+        subForwardListStruct* cur_prev = NULL;
+        for (unsigned int i = 0; i < where; i++)
+        {
+            cur_prev = cur;
+            cur = cur->next;
+        }
+        if (cur_prev) cur_prev->next = cur->next;
+        else sfls = cur->next;
+        delete cur;
+        return true;
     }
-    for (unsigned int i = 0; i < N; i++)
+
+    //определить размер недосписка
+    unsigned int size()
     {
-        delete ToDo[i];
+        unsigned int size = 0;
+        subForwardListStruct* temp = sfls;
+        while (temp)
+        {
+            temp = temp->next;
+            size++;
+        }
+        return size;
     }
-    delete[] ToDo;
-    *sfl = NULL;
-}
+
+    subForwardListStruct* sfls;
+
+    bool clear()
+    {
+        this->~subforwardlist();
+        return true;
+    }
+
+private:
+    struct subForwardListStruct
+    {
+        int data;
+        subForwardListStruct* next;
+    };
+};
