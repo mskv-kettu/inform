@@ -1,11 +1,10 @@
 #include "Wizard.h"
 
 
-Wizard::Wizard() {};
+Wizard::Wizard(int maxHealth, int health, int intellect, int strength) : Player( maxHealth, health, intellect, strength) {};
 Wizard::~Wizard() {};
 
 int Wizard::getDamage()
 {
-	return this->
+	return this->intellect;
 }
-bool Wizard::canUse(Item* item) override;

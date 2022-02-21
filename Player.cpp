@@ -1,54 +1,48 @@
-#include "Player.h";
+#include "Player.h"
 
-Player::Player() {}
+Player::Player(int maxHealth, int health, int intellect, int strength)
+{
+	this->maxHealth = maxHealth;
+	this->health = health;
+	this->intellect = intellect;
+	this->strength = strength;
+}
 
 Player::~Player() {}
 
-void Player::setStrength(int strength)
+void Player::Strength(int strength)
 {
 	this->strength = strength;
 }
-void Player::setLevel(int level)
-{
-	this->level = level;
-}
-
-int Player::getStrength()
+int Player::Strength()
 {
 	return this->strength;
 }
-unsigned int Player::getLevel()
-{
-	return this->level;
-}
 
-void Player::setIntellect(int intellect)
+
+void Player::Intellect(int intellect)
 {
 	this->intellect = intellect;
 }
-int Player::getIntellect()
+int Player::Intellect()
 {
 	return this->intellect;
 }
 
-void Player::setMaxHealth(int maxHealth)
+void Player::MaxHealth(int maxHealth)
 {
 	this->maxHealth = maxHealth;
 }
-int Player::getMaxHealth()
+int Player::MaxHealth()
 {
 	return this->maxHealth;
 }
 
-void Player::setHealth(int health)
+void Player::Health(int health)
 {
 	this->health = health;
 }
-int Player::getHealth()
+int Player::Health()
 {
 	return this->health;
 }
-
-//virtual int Player::getDamage() = 0;
-
-//virtual bool Player::canUse(Item* item);

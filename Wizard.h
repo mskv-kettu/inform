@@ -5,9 +5,8 @@
 class Wizard : public Player
 {
 public:
-	Wizard();
-	~Wizard();
+	Wizard(int maxHealth, int health, int intellect, int strength);
+	virtual ~Wizard();
 
 	int getDamage() override;
-	bool canUse(Item* item) override;
 };

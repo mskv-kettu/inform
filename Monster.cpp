@@ -1,11 +1,12 @@
 #include "Monster.h"
 #include <iostream>;
 
-Monster::Monster(string Name, unsigned int level, int baseDamage)
+Monster::Monster(string Name, unsigned int level, int baseDamage, int hp)
 {
 	this->Name = Name;
 	this->level = level;
 	this->baseDamage = baseDamage;
+	this->CurrentHp = hp;
 }
 
 Monster::~Monster() {};
@@ -21,4 +22,10 @@ unsigned int Monster::getLevel()
 int Monster::getBaseDamage()
 {
 	return this->baseDamage;
+}
+int Monster::getCurrentHp() {
+	return this->CurrentHp;
+}
+void Monster::changeHp(int hp) {
+	this->CurrentHp = hp;
 }

@@ -1,48 +1,35 @@
 #pragma once
 
-#include "Item.h"
-
 class Player
 {
 protected:
-	unsigned int level;
 	int maxHealth;
     int health;
 	int intellect;
     int strength;
 
 public:
-    Player();
+    //constructor
+    Player(int maxHealth, int health, int intellect, int strength);
     
-    virtual ~Player();
+    virtual ~Player() = 0;
 
     // Задать силу
-    void setStrength(int strength);
-    // Задать уровень
-    void setLevel(int level);
-
+    void Strength(int strength);
     // Получить силу
-    int getStrength();
-    // Получить уровень
-    unsigned int getLevel();
+    int Strength();
 
     //
-    void setIntellect(int intellect);
-    //
-    int getIntellect();
+    void Intellect(int intellect);
+    int Intellect();
 
     //
-    void setMaxHealth(int maxHealth);
-    //
-    int getMaxHealth();
+    void MaxHealth(int maxHealth);
+    int MaxHealth();
 
-    //
-    void setHealth(int health);
-    //
-    int getHealth();
+    // Health get/set
+    void Health(int health);
+    int Health();
 
-    virtual int getDamage();
-
-    // Проверка, может ли игрок использовать предмет
-    virtual bool canUse(Item* item);
+    virtual int getDamage() = 0;
 };

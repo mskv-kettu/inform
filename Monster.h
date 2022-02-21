@@ -9,14 +9,19 @@ protected:
     string Name;
     unsigned int level;
     int baseDamage;
+    int CurrentHp;
 public:
-    Monster(string Name, unsigned int level, int baseDamage);
+    Monster(string Name, unsigned int level, int baseDamage, int hp);
 
     virtual ~Monster();
 
     string getName();
-    // Получить уровень Монстра
+
     unsigned int getLevel();
-    // Получить базовый урон
+
     int getBaseDamage();
+
+    int getCurrentHp();
+
+    void changeHp(int hp);
 };
