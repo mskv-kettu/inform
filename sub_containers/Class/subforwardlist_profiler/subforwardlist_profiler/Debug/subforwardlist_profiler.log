@@ -1,7 +1,0 @@
-﻿  subforwardlist_profiler.cpp
-C:\Users\mskvo\Documents\inform\subforwardlist_profiler\subforwardlist_profiler\subforwardlist_profiler.cpp(16,19): warning C4244: инициализация: преобразование "_Rep" в "unsigned int", возможна потеря данных
-          with
-          [
-              _Rep=__int64
-          ]
-  subforwardlist_profiler.vcxproj -> C:\Users\mskvo\Documents\inform\subforwardlist_profiler\Debug\subforwardlist_profiler.exe
