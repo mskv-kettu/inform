@@ -1,1 +1,1 @@
-Simple Game
+D&D style game
