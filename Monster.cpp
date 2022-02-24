@@ -1,5 +1,5 @@
 #include "Monster.h"
-#include <iostream>;
+#include <iostream>
 
 Monster::Monster(string Name, unsigned int level, int baseDamage, int hp)
 {
@@ -8,7 +8,7 @@ Monster::Monster(string Name, unsigned int level, int baseDamage, int hp)
 	this->baseDamage = baseDamage;
 	this->CurrentHp = hp;
 }
-
+Monster::Monster() {};
 Monster::~Monster() {};
 
 string Monster::getName()

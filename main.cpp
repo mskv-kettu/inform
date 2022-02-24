@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Event.h"
+#include "FightEvent.h"
 #include "Monster.h"
 #include "Wizard.h"
 
@@ -8,19 +9,25 @@ using namespace std;
 int main()
 {
     Wizard* wiz = new Wizard(10, 10, 10, 0);
-    Monster* monster = new Monster("Ghost", 1, 2, 30);
-    
-    while (wiz->Health() > 0 and monster->getCurrentHp())
+
+    Monster* monsterPack[10];
+    for (int i = 0; i < 10; i++)
     {
-        monster->changeHp(monster->getCurrentHp() - wiz->getDamage());
-        if (monster->getCurrentHp() <= 0) break;
-        wiz->Health(wiz->Health() - monster->getBaseDamage());
-        cout << "\nwizard hp: " << wiz->Health() << "\n" << "monster hp: " << monster->getCurrentHp() << "\n";
+        monsterPack[i] = new Monster("Ghost", 1, 2, 30);
     }
 
-    cout << "\nwizard hp: " << wiz->Health() << "\n" << "monster hp: " << monster->getCurrentHp() << "\n";
 
+    for (int i = 0; i < 10; i++)
+    {
+        FightEvent fight1(wiz, monsterPack[i]);
+        fight1.fightEventHandler();
+    }
+    
     delete wiz;
-    delete monster;
+    for (int i = 0; i < 10; i++)
+    {
+        delete monsterPack[i];
+    }
+    delete[] monsterPack;
     return 0;
 }

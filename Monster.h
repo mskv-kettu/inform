@@ -12,6 +12,7 @@ protected:
     int CurrentHp;
 public:
     Monster(string Name, unsigned int level, int baseDamage, int hp);
+    Monster();
 
     virtual ~Monster();
 

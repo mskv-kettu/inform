@@ -3,7 +3,7 @@
 class Event
 {
 protected:
-	unsigned int id;
+	unsigned int id = 0;
 public:
-	virtual ~Event() = 0;
+	virtual ~Event() {};
 };
