@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\inform_main.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\inform_main.dir/objects.a @CMakeFiles\inform_main.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\inform_main.dir/objects.a -Wl,--no-whole-archive -o inform_main.exe -Wl,--out-implib,libinform_main.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\inform_main.dir\linklibs.rsp

@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Event.h
+
+../FightEvent.h
+Event.h
+../Event.h
+Monster.h
+../Monster.h
+Player.h
+../Player.h
+iostream
+-
+stdlib.h
+-
+
+../Monster.h
+iostream
+-
+
+../Player.h
+
+C:/rfvf/inform-main/FightEvent.cpp
+FightEvent.h
+-
+windows.h
+-
+

@@ -1,0 +1,3 @@
+C:/rfvf/inform-main/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/rfvf/inform-main/cmake-build-debug/CMakeFiles/inform_main.dir
+C:/rfvf/inform-main/cmake-build-debug/CMakeFiles/rebuild_cache.dir
