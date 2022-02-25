@@ -28,6 +28,5 @@ int main()
     {
         delete monsterPack[i];
     }
-    delete[] monsterPack;
     return 0;
 }
