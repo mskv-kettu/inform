@@ -1,5 +1,8 @@
 #pragma once
 
+#include "Item.h"
+#include "Potion.h"
+
 class Player
 {
 protected:
@@ -7,6 +10,11 @@ protected:
     int health;
 	int intellect;
     int strength;
+// in proccess
+public:
+    unsigned int inventorySpace;
+    Potion* inventory;
+
 
 public:
     //constructor
@@ -32,4 +40,5 @@ public:
     int Health();
 
     virtual int getDamage() = 0;
+
 };

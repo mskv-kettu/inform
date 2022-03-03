@@ -3,6 +3,8 @@
 #include "FightEvent.h"
 #include "Monster.h"
 #include "Wizard.h"
+#include "Potion.h"
+#include "Item.h"
 
 using namespace std;
 

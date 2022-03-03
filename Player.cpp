@@ -6,9 +6,14 @@ Player::Player(int maxHealth, int health, int intellect, int strength)
 	this->health = health;
 	this->intellect = intellect;
 	this->strength = strength;
+	this->inventorySpace = 5; // Testing
+	this->inventory = new Potion[inventorySpace];
 }
 
-Player::~Player() {}
+Player::~Player() 
+{
+	delete[] inventory;
+}
 
 void Player::Strength(int strength)
 {
