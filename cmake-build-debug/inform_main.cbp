@@ -8,33 +8,33 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/rfvf/inform-main/cmake-build-debug"/>
+				<Option working_dir="C:/rfvf/inform-main/NewVersion/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/NewVersion/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/NewVersion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/NewVersion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/NewVersion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/rfvf/inform-main/cmake-build-debug"/>
+				<Option working_dir="C:/rfvf/inform-main/NewVersion/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/NewVersion/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/NewVersion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/NewVersion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/NewVersion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="inform_main">
-				<Option output="C:/rfvf/inform-main/cmake-build-debug/inform_main.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/rfvf/inform-main/cmake-build-debug"/>
+				<Option output="C:/rfvf/inform-main/NewVersion/cmake-build-debug/inform_main.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/rfvf/inform-main/NewVersion/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/rfvf/inform-main/."/>
+					<Add directory="C:/rfvf/inform-main/NewVersion/."/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
@@ -44,20 +44,20 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 inform_main"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/NewVersion/cmake-build-debug/Makefile&quot;  VERBOSE=1 inform_main"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/NewVersion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/NewVersion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/NewVersion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="inform_main/fast">
-				<Option output="C:/rfvf/inform-main/cmake-build-debug/inform_main.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/rfvf/inform-main/cmake-build-debug"/>
+				<Option output="C:/rfvf/inform-main/NewVersion/cmake-build-debug/inform_main.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/rfvf/inform-main/NewVersion/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/rfvf/inform-main/."/>
+					<Add directory="C:/rfvf/inform-main/NewVersion/."/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
@@ -67,60 +67,60 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 inform_main/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/NewVersion/cmake-build-debug/Makefile&quot;  VERBOSE=1 inform_main/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/NewVersion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/NewVersion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/NewVersion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/rfvf/inform-main/cmake-build-debug"/>
+				<Option working_dir="C:/rfvf/inform-main/NewVersion/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/NewVersion/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/NewVersion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/NewVersion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/rfvf/inform-main/NewVersion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/rfvf/inform-main/Event.h">
+		<Unit filename="C:/rfvf/inform-main/NewVersion/Event.h">
 			<Option target="inform_main"/>
 		</Unit>
-		<Unit filename="C:/rfvf/inform-main/FightEvent.cpp">
+		<Unit filename="C:/rfvf/inform-main/NewVersion/FightEvent.cpp">
 			<Option target="inform_main"/>
 		</Unit>
-		<Unit filename="C:/rfvf/inform-main/FightEvent.h">
+		<Unit filename="C:/rfvf/inform-main/NewVersion/FightEvent.h">
 			<Option target="inform_main"/>
 		</Unit>
-		<Unit filename="C:/rfvf/inform-main/Item.cpp">
+		<Unit filename="C:/rfvf/inform-main/NewVersion/Item.cpp">
 			<Option target="inform_main"/>
 		</Unit>
-		<Unit filename="C:/rfvf/inform-main/Item.h">
+		<Unit filename="C:/rfvf/inform-main/NewVersion/Item.h">
 			<Option target="inform_main"/>
 		</Unit>
-		<Unit filename="C:/rfvf/inform-main/Monster.cpp">
+		<Unit filename="C:/rfvf/inform-main/NewVersion/Monster.cpp">
 			<Option target="inform_main"/>
 		</Unit>
-		<Unit filename="C:/rfvf/inform-main/Monster.h">
+		<Unit filename="C:/rfvf/inform-main/NewVersion/Monster.h">
 			<Option target="inform_main"/>
 		</Unit>
-		<Unit filename="C:/rfvf/inform-main/Player.cpp">
+		<Unit filename="C:/rfvf/inform-main/NewVersion/Player.cpp">
 			<Option target="inform_main"/>
 		</Unit>
-		<Unit filename="C:/rfvf/inform-main/Player.h">
+		<Unit filename="C:/rfvf/inform-main/NewVersion/Player.h">
 			<Option target="inform_main"/>
 		</Unit>
-		<Unit filename="C:/rfvf/inform-main/Wizard.cpp">
+		<Unit filename="C:/rfvf/inform-main/NewVersion/Wizard.cpp">
 			<Option target="inform_main"/>
 		</Unit>
-		<Unit filename="C:/rfvf/inform-main/Wizard.h">
+		<Unit filename="C:/rfvf/inform-main/NewVersion/Wizard.h">
 			<Option target="inform_main"/>
 		</Unit>
-		<Unit filename="C:/rfvf/inform-main/main.cpp">
+		<Unit filename="C:/rfvf/inform-main/NewVersion/main.cpp">
 			<Option target="inform_main"/>
 		</Unit>
-		<Unit filename="C:/rfvf/inform-main/CMakeLists.txt">
+		<Unit filename="C:/rfvf/inform-main/NewVersion/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -9,20 +9,18 @@ protected:
     string title;
     int weight;
     unsigned int level;
-    bool magical;
-    int baseDamage;
+    int Damage;
 public:
-    Item(string title, int weight, unsigned int level, bool magical, int baseDamage);
+    Item(string title, int weight, unsigned int level, int Damage);
 
     virtual ~Item();
 
     string getTitle();
-    // Получить вес предмета
+
     int getWeight();
-    // Получить уровень предмета
+
     unsigned int getLevel();
-    // Получить, является ли предмет магичным
-    bool isMagical();
-    // Получить базовый урон
-    int getBaseDamage();
+
+
+    int Damage();
 };

@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/rfvf/inform-main/FightEvent.cpp" "C:/rfvf/inform-main/cmake-build-debug/CMakeFiles/inform_main.dir/FightEvent.cpp.obj"
-  "C:/rfvf/inform-main/Item.cpp" "C:/rfvf/inform-main/cmake-build-debug/CMakeFiles/inform_main.dir/Item.cpp.obj"
-  "C:/rfvf/inform-main/Monster.cpp" "C:/rfvf/inform-main/cmake-build-debug/CMakeFiles/inform_main.dir/Monster.cpp.obj"
-  "C:/rfvf/inform-main/Player.cpp" "C:/rfvf/inform-main/cmake-build-debug/CMakeFiles/inform_main.dir/Player.cpp.obj"
-  "C:/rfvf/inform-main/Wizard.cpp" "C:/rfvf/inform-main/cmake-build-debug/CMakeFiles/inform_main.dir/Wizard.cpp.obj"
-  "C:/rfvf/inform-main/main.cpp" "C:/rfvf/inform-main/cmake-build-debug/CMakeFiles/inform_main.dir/main.cpp.obj"
+  "C:/rfvf/inform-main/NewVersion/FightEvent.cpp" "C:/rfvf/inform-main/NewVersion/cmake-build-debug/CMakeFiles/inform_main.dir/FightEvent.cpp.obj"
+  "C:/rfvf/inform-main/NewVersion/Item.cpp" "C:/rfvf/inform-main/NewVersion/cmake-build-debug/CMakeFiles/inform_main.dir/Item.cpp.obj"
+  "C:/rfvf/inform-main/NewVersion/Monster.cpp" "C:/rfvf/inform-main/NewVersion/cmake-build-debug/CMakeFiles/inform_main.dir/Monster.cpp.obj"
+  "C:/rfvf/inform-main/NewVersion/Player.cpp" "C:/rfvf/inform-main/NewVersion/cmake-build-debug/CMakeFiles/inform_main.dir/Player.cpp.obj"
+  "C:/rfvf/inform-main/NewVersion/Wizard.cpp" "C:/rfvf/inform-main/NewVersion/cmake-build-debug/CMakeFiles/inform_main.dir/Wizard.cpp.obj"
+  "C:/rfvf/inform-main/NewVersion/main.cpp" "C:/rfvf/inform-main/NewVersion/cmake-build-debug/CMakeFiles/inform_main.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

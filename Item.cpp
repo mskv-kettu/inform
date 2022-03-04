@@ -24,14 +24,9 @@ int Item::getWeight()
 unsigned int Item::getLevel()
 {
 	return this->level;
-}
 
-bool Item::isMagical()
-{
-	return this->magical;
-}
 
-int Item::getBaseDamage()
+int Item::Damage()
 {
 	return this->baseDamage;
 }
