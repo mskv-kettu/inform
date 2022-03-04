@@ -9,9 +9,10 @@ protected:
     string title;
     int weight;
     unsigned int level;
-    int Damage;
+    bool magical;
+    int baseDamage;
 public:
-    Item(string title, int weight, unsigned int level, int Damage);
+    Item(string title, int weight, unsigned int level, bool magical, int baseDamage);
 
     virtual ~Item();
 
@@ -21,6 +22,7 @@ public:
 
     unsigned int getLevel();
 
+    bool isMagical();
 
-    int Damage();
+    int getBaseDamage();
 };

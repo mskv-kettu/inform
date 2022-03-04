@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\rfvf\inform-main\NewVersion
+CMAKE_SOURCE_DIR = C:\inform-NewVersion
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\rfvf\inform-main\NewVersion\cmake-build-debug
+CMAKE_BINARY_DIR = C:\inform-NewVersion\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/inform_main.dir/depend.make
@@ -68,86 +68,86 @@ include CMakeFiles/inform_main.dir/flags.make
 CMakeFiles/inform_main.dir/FightEvent.cpp.obj: CMakeFiles/inform_main.dir/flags.make
 CMakeFiles/inform_main.dir/FightEvent.cpp.obj: CMakeFiles/inform_main.dir/includes_CXX.rsp
 CMakeFiles/inform_main.dir/FightEvent.cpp.obj: ../FightEvent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\rfvf\inform-main\NewVersion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/inform_main.dir/FightEvent.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\inform_main.dir\FightEvent.cpp.obj -c C:\rfvf\inform-main\NewVersion\FightEvent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\inform-NewVersion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/inform_main.dir/FightEvent.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\inform_main.dir\FightEvent.cpp.obj -c C:\inform-NewVersion\FightEvent.cpp
 
 CMakeFiles/inform_main.dir/FightEvent.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/inform_main.dir/FightEvent.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\rfvf\inform-main\NewVersion\FightEvent.cpp > CMakeFiles\inform_main.dir\FightEvent.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\inform-NewVersion\FightEvent.cpp > CMakeFiles\inform_main.dir\FightEvent.cpp.i
 
 CMakeFiles/inform_main.dir/FightEvent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/inform_main.dir/FightEvent.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\rfvf\inform-main\NewVersion\FightEvent.cpp -o CMakeFiles\inform_main.dir\FightEvent.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\inform-NewVersion\FightEvent.cpp -o CMakeFiles\inform_main.dir\FightEvent.cpp.s
 
 CMakeFiles/inform_main.dir/Item.cpp.obj: CMakeFiles/inform_main.dir/flags.make
 CMakeFiles/inform_main.dir/Item.cpp.obj: CMakeFiles/inform_main.dir/includes_CXX.rsp
 CMakeFiles/inform_main.dir/Item.cpp.obj: ../Item.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\rfvf\inform-main\NewVersion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/inform_main.dir/Item.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\inform_main.dir\Item.cpp.obj -c C:\rfvf\inform-main\NewVersion\Item.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\inform-NewVersion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/inform_main.dir/Item.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\inform_main.dir\Item.cpp.obj -c C:\inform-NewVersion\Item.cpp
 
 CMakeFiles/inform_main.dir/Item.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/inform_main.dir/Item.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\rfvf\inform-main\NewVersion\Item.cpp > CMakeFiles\inform_main.dir\Item.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\inform-NewVersion\Item.cpp > CMakeFiles\inform_main.dir\Item.cpp.i
 
 CMakeFiles/inform_main.dir/Item.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/inform_main.dir/Item.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\rfvf\inform-main\NewVersion\Item.cpp -o CMakeFiles\inform_main.dir\Item.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\inform-NewVersion\Item.cpp -o CMakeFiles\inform_main.dir\Item.cpp.s
 
 CMakeFiles/inform_main.dir/main.cpp.obj: CMakeFiles/inform_main.dir/flags.make
 CMakeFiles/inform_main.dir/main.cpp.obj: CMakeFiles/inform_main.dir/includes_CXX.rsp
 CMakeFiles/inform_main.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\rfvf\inform-main\NewVersion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/inform_main.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\inform_main.dir\main.cpp.obj -c C:\rfvf\inform-main\NewVersion\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\inform-NewVersion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/inform_main.dir/main.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\inform_main.dir\main.cpp.obj -c C:\inform-NewVersion\main.cpp
 
 CMakeFiles/inform_main.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/inform_main.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\rfvf\inform-main\NewVersion\main.cpp > CMakeFiles\inform_main.dir\main.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\inform-NewVersion\main.cpp > CMakeFiles\inform_main.dir\main.cpp.i
 
 CMakeFiles/inform_main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/inform_main.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\rfvf\inform-main\NewVersion\main.cpp -o CMakeFiles\inform_main.dir\main.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\inform-NewVersion\main.cpp -o CMakeFiles\inform_main.dir\main.cpp.s
 
 CMakeFiles/inform_main.dir/Monster.cpp.obj: CMakeFiles/inform_main.dir/flags.make
 CMakeFiles/inform_main.dir/Monster.cpp.obj: CMakeFiles/inform_main.dir/includes_CXX.rsp
 CMakeFiles/inform_main.dir/Monster.cpp.obj: ../Monster.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\rfvf\inform-main\NewVersion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/inform_main.dir/Monster.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\inform_main.dir\Monster.cpp.obj -c C:\rfvf\inform-main\NewVersion\Monster.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\inform-NewVersion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/inform_main.dir/Monster.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\inform_main.dir\Monster.cpp.obj -c C:\inform-NewVersion\Monster.cpp
 
 CMakeFiles/inform_main.dir/Monster.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/inform_main.dir/Monster.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\rfvf\inform-main\NewVersion\Monster.cpp > CMakeFiles\inform_main.dir\Monster.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\inform-NewVersion\Monster.cpp > CMakeFiles\inform_main.dir\Monster.cpp.i
 
 CMakeFiles/inform_main.dir/Monster.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/inform_main.dir/Monster.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\rfvf\inform-main\NewVersion\Monster.cpp -o CMakeFiles\inform_main.dir\Monster.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\inform-NewVersion\Monster.cpp -o CMakeFiles\inform_main.dir\Monster.cpp.s
 
 CMakeFiles/inform_main.dir/Player.cpp.obj: CMakeFiles/inform_main.dir/flags.make
 CMakeFiles/inform_main.dir/Player.cpp.obj: CMakeFiles/inform_main.dir/includes_CXX.rsp
 CMakeFiles/inform_main.dir/Player.cpp.obj: ../Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\rfvf\inform-main\NewVersion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/inform_main.dir/Player.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\inform_main.dir\Player.cpp.obj -c C:\rfvf\inform-main\NewVersion\Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\inform-NewVersion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/inform_main.dir/Player.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\inform_main.dir\Player.cpp.obj -c C:\inform-NewVersion\Player.cpp
 
 CMakeFiles/inform_main.dir/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/inform_main.dir/Player.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\rfvf\inform-main\NewVersion\Player.cpp > CMakeFiles\inform_main.dir\Player.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\inform-NewVersion\Player.cpp > CMakeFiles\inform_main.dir\Player.cpp.i
 
 CMakeFiles/inform_main.dir/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/inform_main.dir/Player.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\rfvf\inform-main\NewVersion\Player.cpp -o CMakeFiles\inform_main.dir\Player.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\inform-NewVersion\Player.cpp -o CMakeFiles\inform_main.dir\Player.cpp.s
 
 CMakeFiles/inform_main.dir/Wizard.cpp.obj: CMakeFiles/inform_main.dir/flags.make
 CMakeFiles/inform_main.dir/Wizard.cpp.obj: CMakeFiles/inform_main.dir/includes_CXX.rsp
 CMakeFiles/inform_main.dir/Wizard.cpp.obj: ../Wizard.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\rfvf\inform-main\NewVersion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/inform_main.dir/Wizard.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\inform_main.dir\Wizard.cpp.obj -c C:\rfvf\inform-main\NewVersion\Wizard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\inform-NewVersion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/inform_main.dir/Wizard.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\inform_main.dir\Wizard.cpp.obj -c C:\inform-NewVersion\Wizard.cpp
 
 CMakeFiles/inform_main.dir/Wizard.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/inform_main.dir/Wizard.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\rfvf\inform-main\NewVersion\Wizard.cpp > CMakeFiles\inform_main.dir\Wizard.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\inform-NewVersion\Wizard.cpp > CMakeFiles\inform_main.dir\Wizard.cpp.i
 
 CMakeFiles/inform_main.dir/Wizard.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/inform_main.dir/Wizard.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\rfvf\inform-main\NewVersion\Wizard.cpp -o CMakeFiles\inform_main.dir\Wizard.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\inform-NewVersion\Wizard.cpp -o CMakeFiles\inform_main.dir\Wizard.cpp.s
 
 # Object files for target inform_main
 inform_main_OBJECTS = \
@@ -168,10 +168,13 @@ inform_main.exe: CMakeFiles/inform_main.dir/Monster.cpp.obj
 inform_main.exe: CMakeFiles/inform_main.dir/Player.cpp.obj
 inform_main.exe: CMakeFiles/inform_main.dir/Wizard.cpp.obj
 inform_main.exe: CMakeFiles/inform_main.dir/build.make
+inform_main.exe: C:/SFML-2.5.1-32-bit/SFML-2.5.1/lib/libsfml-graphics-d.a
+inform_main.exe: C:/SFML-2.5.1-32-bit/SFML-2.5.1/lib/libsfml-window-d.a
+inform_main.exe: C:/SFML-2.5.1-32-bit/SFML-2.5.1/lib/libsfml-system-d.a
 inform_main.exe: CMakeFiles/inform_main.dir/linklibs.rsp
 inform_main.exe: CMakeFiles/inform_main.dir/objects1.rsp
 inform_main.exe: CMakeFiles/inform_main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\rfvf\inform-main\NewVersion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable inform_main.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\inform-NewVersion\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable inform_main.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\inform_main.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -183,6 +186,6 @@ CMakeFiles/inform_main.dir/clean:
 .PHONY : CMakeFiles/inform_main.dir/clean
 
 CMakeFiles/inform_main.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\rfvf\inform-main\NewVersion C:\rfvf\inform-main\NewVersion C:\rfvf\inform-main\NewVersion\cmake-build-debug C:\rfvf\inform-main\NewVersion\cmake-build-debug C:\rfvf\inform-main\NewVersion\cmake-build-debug\CMakeFiles\inform_main.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\inform-NewVersion C:\inform-NewVersion C:\inform-NewVersion\cmake-build-debug C:\inform-NewVersion\cmake-build-debug C:\inform-NewVersion\cmake-build-debug\CMakeFiles\inform_main.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/inform_main.dir/depend
 

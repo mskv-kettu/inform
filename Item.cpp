@@ -4,7 +4,6 @@ Item::Item(string title, int weight, unsigned int level, bool magical, int baseD
 {
 	this->title = title;
 	this->weight = weight;
-	this->level = level;
 	this->magical = magical;
 	this->baseDamage = baseDamage;
 }
@@ -24,9 +23,14 @@ int Item::getWeight()
 unsigned int Item::getLevel()
 {
 	return this->level;
+}
 
+bool Item::isMagical()
+{
+	return this->magical;
+}
 
-int Item::Damage()
+int Item::getBaseDamage()
 {
 	return this->baseDamage;
 }

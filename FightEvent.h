@@ -5,6 +5,7 @@
 #include "Player.h"
 #include <iostream>
 #include <stdlib.h>
+#include "Item.h"
 
 
 class FightEvent : public Event

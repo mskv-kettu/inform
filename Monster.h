@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include <stdlib.h>
 
 using std::string;
 
@@ -24,5 +25,5 @@ public:
 
     int getCurrentHp();
 
-    void changeHp(int hp);
+    void getCurrentHp(int hp);
 };

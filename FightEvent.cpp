@@ -1,5 +1,5 @@
-#include <FightEvent.h>
-#include <windows.h>
+#include "FightEvent.h"
+
 
 FightEvent::FightEvent(Player* player, Monster* monster)
 {
@@ -15,7 +15,6 @@ FightEvent::~FightEvent() {};
 // It`s impossible to activate method from constructor
 void FightEvent::fightEventHandler()
 {
-	
 	while (player->Health() > 0 and monster->getCurrentHp())
 	{
 		std::cout << "\nYour HP: " << player->Health() << "\n";
@@ -25,9 +24,15 @@ void FightEvent::fightEventHandler()
 			std::cout << "\nYou retreated\n";
             return;
 		}
-		if (monster->getCurrentHp() <= 0) break;
+		if (monster->getCurrentHp() <= 0) {
+            std::cout << "\n You beat him!!!"<< " \nYou get NEW ITEM!!!!";
+
+
+            break;
+        }
 		opponentTurn();
-	}
+
+    }
 	if (player->Health() == 0)
 	{
 		std::cout << "\nYou are DEAD\n";
@@ -58,7 +63,7 @@ bool FightEvent::playerTurn()
 	case (1):
 
 		dmg = player->getDamage()*Randomattc;
-		monster->changeHp(monster->getCurrentHp() - dmg);
+		monster->getCurrentHp(monster->getCurrentHp() - dmg);
         switch (Randomattc){
             case (0):
                 std::cout << "\nMISS\n";
@@ -85,7 +90,7 @@ void FightEvent::opponentTurn()
 	switch (action)
 	{
 	case 1:
-		dmg = monster->getBaseDamage()*(rand() % 3);
+		dmg = monster->getBaseDamage();
 		player->Health(player->Health() - dmg);
 		std::cout << "\nYou took: " << dmg << "\n";
 		break;

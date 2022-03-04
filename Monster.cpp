@@ -24,8 +24,8 @@ int Monster::getBaseDamage()
 	return this->baseDamage;
 }
 int Monster::getCurrentHp() {
-	return this->CurrentHp;
+	return this->CurrentHp*(rand() % 3);
 }
-void Monster::changeHp(int hp) {
+void Monster::getCurrentHp(int hp) {
 	this->CurrentHp = hp;
 }

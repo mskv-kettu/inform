@@ -4,12 +4,26 @@
 #include "Monster.h"
 #include "Wizard.h"
 #include <stdlib.h>
-#include <windows.h>
+#include <SFML/Graphics.hpp>
 
 using namespace std;
 
 int main()
 {
+    /*sf::RenderWindow window(sf::VideoMode(800, 600), "Battle");
+    while(window.isOpen())
+    {
+        sf::Event event;
+        while(window.pollEvent(event))
+        {
+            if(event.type == sf::Event::Closed ||
+               (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape))
+                window.close();
+        }
+
+        window.clear();
+        window.display();
+    }*/
     Wizard* wiz = new Wizard(10, 10, 10, 0);
 
     Monster* monsterPack[10];
@@ -33,7 +47,7 @@ int main()
         FightEvent fight1(wiz, monsterPack[i]);
         fight1.fightEventHandler();
     }
-    
+
     delete wiz;
     for (int i = 0; i < 10; i++) {
         delete monsterPack[i];
