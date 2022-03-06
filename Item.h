@@ -4,19 +4,20 @@
 
 using std::string;
 
+// make it virtual
+
 class Item {
 protected:
     string title;
     int weight;
-    int baseDamage;
+    const string type;
 public:
-    Item(string title, int weight);
+    Item(string title, int weight, string type);
     Item() {};
 
     virtual ~Item();
 
-    string getTitle();
-    // Получить вес предмета
-    int getWeight();
-    // Получить базовый урон
+    string Title();
+    int Weight();
+    string Type();
 };

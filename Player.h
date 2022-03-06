@@ -1,20 +1,38 @@
 #pragma once
 
 #include "Item.h"
-#include "Potion.h"
+#include "Consumables.h"
+
 
 class Player
 {
+// Inventory
+    class Inventory
+    {
+    private:
+        unsigned int space;
+    public: // Temporary
+        Item** inventory;
+    public:
+
+        Inventory(unsigned int space);
+        ~Inventory();
+
+        unsigned int GetTotalSpace();
+        unsigned int GetAmountOfItems();
+        void Sort();
+    };
+
 protected:
 	int maxHealth;
     int health;
 	int intellect;
     int strength;
-// in proccess
+    
+    Player* itself;
+    
 public:
-    unsigned int inventorySpace;
-    Potion* inventory;
-
+    Inventory inventory;
 
 public:
     //constructor
@@ -22,23 +40,28 @@ public:
     
     virtual ~Player() = 0;
 
-    // Задать силу
+    // Set absolute value of strength
     void Strength(int strength);
-    // Получить силу
+    // Get value of strength
     int Strength();
 
-    //
+    // Set absolute value of intellect
     void Intellect(int intellect);
+    // Get value of intellect
     int Intellect();
 
-    //
+    // Set absolute value of maximum health
     void MaxHealth(int maxHealth);
+    // Get value of maximum health
     int MaxHealth();
 
-    // Health get/set
+    // Set absolute value of current health
     void Health(int health);
+    // Get value of current health
     int Health();
 
+    // Damage function
     virtual int getDamage() = 0;
 
+    bool UseItem(Item* item);
 };

@@ -1,11 +1,15 @@
 #include "Potion.h"
 
-Potion::Potion(string title, int weight, int health) : Item(title, weight), health(health)
-{
+Potion::Potion(string title, int weight, int effect) : Consumables(title, weight), effect(effect) {}
 
+int Potion::Effect()
+{
+	return effect;
 }
 
-int Potion::getEffect()
+bool Potion::apply(void* object)
 {
-	return health;
+	Player* obj = (Player*)object;
+	obj->Health(effect + obj->Health());
+	return true;
 }

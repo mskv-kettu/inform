@@ -1,18 +1,18 @@
 #include "Player.h"
 
-Player::Player(int maxHealth, int health, int intellect, int strength)
+// default inventory space is 3
+
+Player::Player(int maxHealth, int health, int intellect, int strength) : inventory(3)
 {
 	this->maxHealth = maxHealth;
 	this->health = health;
 	this->intellect = intellect;
 	this->strength = strength;
-	this->inventorySpace = 5; // Testing
-	this->inventory = new Potion[inventorySpace];
+	itself = this;
 }
 
 Player::~Player() 
 {
-	delete[] inventory;
 }
 
 void Player::Strength(int strength)
@@ -50,4 +50,87 @@ void Player::Health(int health)
 int Player::Health()
 {
 	return this->health;
+}
+
+
+//Inventory
+
+Player::Inventory::Inventory(unsigned int space)
+{
+	this->space = space;
+	inventory = new Item*[space];
+	for (unsigned int i = 0; i < space; i++)
+	{
+		 inventory[i] = NULL;
+	}
+}
+
+Player::Inventory::~Inventory()
+{
+	delete[] inventory;	
+	std::cout << "inventory cleared";
+}
+
+unsigned int Player::Inventory::GetTotalSpace()
+{
+	return space;
+}
+
+unsigned int Player::Inventory::GetAmountOfItems()
+{
+	unsigned int amountOfItems = 0;
+	for (unsigned int i = 0; i < space; i++)
+	{
+		if (inventory[i] != NULL) amountOfItems++;
+	}
+	return amountOfItems;
+}
+
+void Player::Inventory::Sort()
+{
+	// 2 sorts
+	// firstly exising ones
+	unsigned int sortedPosition = 0;
+	for (unsigned int i = 0; i < space; i++)
+	{
+		if (inventory[i] != NULL)
+		{
+			inventory[sortedPosition] = inventory[i];
+			inventory[i] = NULL;
+			sortedPosition++;
+		}
+	}
+
+	// sort types of items
+	// Im too lazy to think about it
+	Item* temp;
+	for (unsigned int i = 0; i < sortedPosition; i++)
+	{
+		for (unsigned int j = sortedPosition - 1; j > i; j--)
+		{
+			if (inventory[j]->Type() > inventory[j - 1]->Type())
+			{
+				temp = inventory[j];
+				inventory[j] = inventory[j - 1];
+				inventory[j - 1] = temp;
+			}
+		}
+	}
+}
+
+bool Player::UseItem(Item* item)
+{
+	//DANGEROUS
+	void* ITEM = item;
+	if (item->Type() == "Consumables")
+	{
+		Consumables* consItem = (Consumables*)ITEM;
+
+		// Make apply return false if failed
+
+		consItem->apply(itself);
+		item = NULL;
+		return true;
+	}
+	return false;
 }

@@ -1,6 +1,6 @@
 #include "Item.h"
 
-Item::Item(string title, int weight)
+Item::Item(string title, int weight, string type)
 {
 	this->title = title;
 	this->weight = weight;
@@ -8,12 +8,17 @@ Item::Item(string title, int weight)
 
 Item::~Item() {};
 
-string Item::getTitle()
+string Item::Title()
 {
-	return this->title;
+	return title;
 }
 
-int Item::getWeight()
+int Item::Weight()
 {
-	return this->weight;
+	return weight;
+}
+
+string Item::Type()
+{
+	return type;
 }

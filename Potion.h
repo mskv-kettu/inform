@@ -1,16 +1,18 @@
 #pragma once
-#include "Item.h"
+#include "Consumables.h"
 
-class Potion : public Item
+class Potion : public Consumables
 {
 protected:
-	int health;
+	int effect;
 public:
 	// may be changed and extended
-	Potion(string title, int weight, int health);
+	Potion(string title, int weight, int effect);
 	Potion() {};
-	~Potion() {};
 
-	int getEffect();
+	virtual ~Potion() {};
+
+	int Effect();
+	virtual bool apply(void* object) override;
 };
 
